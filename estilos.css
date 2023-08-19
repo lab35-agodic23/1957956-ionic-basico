@@ -1,0 +1,19 @@
+
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+
+    body {
+        color: blue;
+      }
+      
+      ::placeholder {
+        color: rgb(0, 60, 128);
+
+      }
+
+     input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
