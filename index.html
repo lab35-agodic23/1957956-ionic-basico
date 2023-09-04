@@ -2,19 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 1</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Form</title>
 </head>
-
 <body>
-    
-    
-    <input type="text" placeholder="Escribe tu nombre" name="" id="mitexto1">
-    <button onclick ="mostrarAlerta()">Enviar</button>
-    <button onclick="limpiarTexto()">Limpiar</button>
+    <h2>Login Form</h2>
+
+    <form id="loginForm">
+        <div class="imgcontainer">
+            <img src="/assets/avatar.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="usuarioInput"><b>Usuario</b></label>
+            <input type="text" id="usuarioInput" placeholder="Usuario" required autocomplete="off">
+
+            <label for="contrasenaInput"><b>Contraseña</b></label>
+            <input type="password" id="contrasenaInput" placeholder="Contraseña" required autocomplete="off">
+
+            <button type="button" id="loginButton" onclick="iniciarSesion()">Iniciar Sesion</button>
+            <button type="button" id="registerButton" onclick="registrarUsuario()">Registrarse</button>
+        </div>
+
+        <div id="spinner" class="spinner"></div>
+    </form>
 
     <script src="script.js"></script>
 </body>
 </html>
+
